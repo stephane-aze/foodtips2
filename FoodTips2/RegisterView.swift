@@ -8,20 +8,24 @@
 import SwiftUI
 
 struct RegisterView: View {
+    @State var username: String = ""
     var body: some View {
         VStack{
-            /*WelcomeText()
+            Text("Register")
             TextField("Username", text: $username).padding()//.background(Color.green)
                 .cornerRadius(5.0)
                 .padding(.bottom,20)
-            SecureField("Password", text: $password).padding()
-                //.background(Color.green)
-                .cornerRadius(5.0)
-                .padding(.bottom,20)
+            
             Button(action: {
                 print("Buttontapped")
             }){
-                LoginButtonContent()
+                Text("Register")
+            }
+            /*NavigationView {
+                NavigationLink(destination: Text("Second View")) {
+                        Text("Hello, World!")
+                    }
+                    .navigationTitle("Navigation")
             }*/
             
         }

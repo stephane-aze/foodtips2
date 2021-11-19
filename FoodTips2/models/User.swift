@@ -9,5 +9,7 @@ import SwiftUI
 
 struct User {
     var username: String;
+    var myAllergenes: List[String]
+    
     
 }
