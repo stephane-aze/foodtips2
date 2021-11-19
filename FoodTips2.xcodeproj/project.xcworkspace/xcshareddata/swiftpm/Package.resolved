@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "ImagePickerModule",
+        "repositoryURL": "https://github.com/swiftui-packages/image-picker-module",
+        "state": {
+          "branch": "main",
+          "revision": "f319168919d4d5f7c6f9af76ba36c47f756cf058",
+          "version": null
+        }
+      }
+    ]
+  },
+  "version": 1
+}
