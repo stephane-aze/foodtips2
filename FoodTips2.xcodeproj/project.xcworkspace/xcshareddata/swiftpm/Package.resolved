@@ -9,6 +9,15 @@
           "revision": "f319168919d4d5f7c6f9af76ba36c47f756cf058",
           "version": null
         }
+      },
+      {
+        "package": "Player",
+        "repositoryURL": "http://github.com/piemonte/Player",
+        "state": {
+          "branch": null,
+          "revision": "d6a6c266e80f90fa93430371076964c196a1d2ec",
+          "version": "0.14.0"
+        }
       }
     ]
   },

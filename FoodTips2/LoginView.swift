@@ -10,28 +10,49 @@ import SwiftUI
 struct LoginView: View {
     @State var username: String = ""
     @State var password: String = ""
+    @State var showError: Bool = false
+    @State var isValid: Bool = false
     var body: some View {
-        VStack{
-            WelcomeText()
-            TextField("Username", text: $username).padding()//.background(Color.green)
-                .cornerRadius(5.0)
-                .padding(.bottom,20)
-            SecureField("Password", text: $password).padding()
-                //.background(Color.green)
-                .cornerRadius(5.0)
-                .padding(.bottom,20)
-            Button(action: {
-                print("Buttontapped")
-            }){
-                LoginButtonContent()
-            }
-            /*NavigationView {
-                NavigationLink(destination: Text("Second View")) {
-                        Text("Hello, World!")
-                    }
-                    .navigationTitle("Navigation")
-            }*/
+        VStack {
             
+            NavigationView {
+                VStack{
+                    Image("Food").resizable()
+                                .aspectRatio(contentMode: .fill)
+                                    .frame(width: 390.0, height: 50.0)
+                    WelcomeText()
+                    TextField("Nom", text: $username).padding()//.background(Color.green)
+                        .cornerRadius(5.0)
+                        .padding(.bottom,20)
+                    SecureField("Mot de passe", text: $password).padding()
+                        //.background(Color.green)
+                        .cornerRadius(5.0)
+                        .padding(.bottom,20)
+                        
+                    if showError {
+                        Text("Erreur de connexion").foregroundColor(Color.red)
+                    }
+                    NavigationLink(destination: HomeView()){
+                            
+                            LoginButtonContent()
+                        }
+                    /*if username == "Stephane" && password == "123456" {
+                        self.isValid = true
+                        
+                    }
+                    else{
+                        self.showError = true
+                    }*/
+                    
+                    NavigationLink(destination: RegisterView()) {
+                        Text("S'inscrire")
+                    }
+                    .navigationTitle("FoodTips")
+            
+                }
+              
+                
+            }
         }
         
     }
@@ -48,7 +69,7 @@ struct LoginButtonContent: View{
 struct WelcomeText: View{
     var body: some View {
             
-        Text("Welcome!")
+        Text("Bienvenue!")
             .font(.largeTitle).fontWeight(.semibold).padding(.bottom,20)
 
         

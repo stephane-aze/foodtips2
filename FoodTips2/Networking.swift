@@ -23,7 +23,15 @@ struct Networking {
         )
         
         request.httpMethod = "POST"
-        request.httpBody = body
+        /**  FormData image  **/
+        let postDict : [String: Any] = ["image": body]
+        guard let postData = try? JSONSerialization.data(withJSONObject: postDict, options: []) else {
+                return
+            }
+
+        request.httpBody = postData
+        /**               */
+        //request.httpBody = body
 
         let task = urlSession.dataTask(
             with: request,

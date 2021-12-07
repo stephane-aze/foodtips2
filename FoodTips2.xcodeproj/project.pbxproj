@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7D05A1B3275D3A52009A3FF5 /* images.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 7D05A1B2275D3A52009A3FF5 /* images.jpeg */; };
+		7D05A1B7275D4E1E009A3FF5 /* Player in Frameworks */ = {isa = PBXBuildFile; productRef = 7D05A1B6275D4E1E009A3FF5 /* Player */; };
+		7D1FD8C6275EB03B009C364D /* VideoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D1FD8C5275EB03B009C364D /* VideoController.swift */; };
+		7D1FD8C8275EB339009C364D /* VideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D1FD8C7275EB339009C364D /* VideoView.swift */; };
+		7D1FD8CA275EB698009C364D /* VideoPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D1FD8C9275EB698009C364D /* VideoPlayerView.swift */; };
+		7D231A5E275FF3DE00661DB5 /* Food.png in Resources */ = {isa = PBXBuildFile; fileRef = 7D231A5D275FF3DE00661DB5 /* Food.png */; };
+		7D9851A0275BADAC001A340E /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D98519F275BADAC001A340E /* HomeView.swift */; };
 		ECA3BC182747EA8A00137872 /* FoodTips2App.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA3BC172747EA8A00137872 /* FoodTips2App.swift */; };
 		ECA3BC1A2747EA8A00137872 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA3BC192747EA8A00137872 /* ContentView.swift */; };
 		ECA3BC1C2747EA8F00137872 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ECA3BC1B2747EA8F00137872 /* Assets.xcassets */; };
@@ -41,6 +48,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7D05A1B2275D3A52009A3FF5 /* images.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = images.jpeg; path = ../../../../Downloads/images.jpeg; sourceTree = "<group>"; };
+		7D1FD8C5275EB03B009C364D /* VideoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoController.swift; sourceTree = "<group>"; };
+		7D1FD8C7275EB339009C364D /* VideoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoView.swift; sourceTree = "<group>"; };
+		7D1FD8C9275EB698009C364D /* VideoPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerView.swift; sourceTree = "<group>"; };
+		7D231A5D275FF3DE00661DB5 /* Food.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Food.png; path = ../../../Downloads/Food.png; sourceTree = "<group>"; };
+		7D231A5F275FF40300661DB5 /* Food.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Food.png; sourceTree = "<group>"; };
+		7D98519F275BADAC001A340E /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		ECA3BC142747EA8A00137872 /* FoodTips2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodTips2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECA3BC172747EA8A00137872 /* FoodTips2App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodTips2App.swift; sourceTree = "<group>"; };
 		ECA3BC192747EA8A00137872 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -65,6 +79,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ECA3BC492747EC7300137872 /* ImagePickerModule in Frameworks */,
+				7D05A1B7275D4E1E009A3FF5 /* Player in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,6 +103,7 @@
 		ECA3BC0B2747EA8A00137872 = {
 			isa = PBXGroup;
 			children = (
+				7D231A5D275FF3DE00661DB5 /* Food.png */,
 				ECA3BC162747EA8A00137872 /* FoodTips2 */,
 				ECA3BC272747EA8F00137872 /* FoodTips2Tests */,
 				ECA3BC312747EA8F00137872 /* FoodTips2UITests */,
@@ -111,13 +127,19 @@
 				ECA3BC4E274803AE00137872 /* models */,
 				ECA3BC4C2748038300137872 /* enum */,
 				ECA3BC172747EA8A00137872 /* FoodTips2App.swift */,
+				7D1FD8C5275EB03B009C364D /* VideoController.swift */,
 				ECA3BC432747EBC200137872 /* LoginView.swift */,
 				ECA3BC412747EBAC00137872 /* ImagePickerView.swift */,
 				ECA3BC192747EA8A00137872 /* ContentView.swift */,
 				ECA3BC1B2747EA8F00137872 /* Assets.xcassets */,
+				7D231A5F275FF40300661DB5 /* Food.png */,
+				7D05A1B2275D3A52009A3FF5 /* images.jpeg */,
 				ECA3BC1D2747EA8F00137872 /* Preview Content */,
 				ECA3BC4A2747F5C000137872 /* RegisterView.swift */,
 				ECA3BC502748187E00137872 /* Networking.swift */,
+				7D98519F275BADAC001A340E /* HomeView.swift */,
+				7D1FD8C7275EB339009C364D /* VideoView.swift */,
+				7D1FD8C9275EB698009C364D /* VideoPlayerView.swift */,
 			);
 			path = FoodTips2;
 			sourceTree = "<group>";
@@ -165,6 +187,7 @@
 			name = FoodTips2;
 			packageProductDependencies = (
 				ECA3BC482747EC7300137872 /* ImagePickerModule */,
+				7D05A1B6275D4E1E009A3FF5 /* Player */,
 			);
 			productName = FoodTips2;
 			productReference = ECA3BC142747EA8A00137872 /* FoodTips2.app */;
@@ -240,6 +263,7 @@
 			mainGroup = ECA3BC0B2747EA8A00137872;
 			packageReferences = (
 				ECA3BC472747EC7300137872 /* XCRemoteSwiftPackageReference "image-picker-module" */,
+				7D05A1B5275D4E1E009A3FF5 /* XCRemoteSwiftPackageReference "Player" */,
 			);
 			productRefGroup = ECA3BC152747EA8A00137872 /* Products */;
 			projectDirPath = "";
@@ -258,7 +282,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				ECA3BC1F2747EA8F00137872 /* Preview Assets.xcassets in Resources */,
+				7D05A1B3275D3A52009A3FF5 /* images.jpeg in Resources */,
 				ECA3BC1C2747EA8F00137872 /* Assets.xcassets in Resources */,
+				7D231A5E275FF3DE00661DB5 /* Food.png in Resources */,
 				ECA3BC4F274803AE00137872 /* models in Resources */,
 				ECA3BC4D2748038300137872 /* enum in Resources */,
 			);
@@ -286,11 +312,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				ECA3BC1A2747EA8A00137872 /* ContentView.swift in Sources */,
+				7D9851A0275BADAC001A340E /* HomeView.swift in Sources */,
 				ECA3BC4B2747F5C000137872 /* RegisterView.swift in Sources */,
+				7D1FD8C6275EB03B009C364D /* VideoController.swift in Sources */,
 				ECA3BC422747EBAC00137872 /* ImagePickerView.swift in Sources */,
 				ECA3BC512748187E00137872 /* Networking.swift in Sources */,
+				7D1FD8C8275EB339009C364D /* VideoView.swift in Sources */,
 				ECA3BC452747EBC300137872 /* LoginView.swift in Sources */,
 				ECA3BC182747EA8A00137872 /* FoodTips2App.swift in Sources */,
+				7D1FD8CA275EB698009C364D /* VideoPlayerView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -451,6 +481,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"FoodTips2/Preview Content\"";
+				DEVELOPMENT_TEAM = 9XW4VJ6J8B;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSCameraUsageDescription = "Nous avons besoin de la permission pour la photo";
@@ -481,6 +512,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"FoodTips2/Preview Content\"";
+				DEVELOPMENT_TEAM = 9XW4VJ6J8B;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSCameraUsageDescription = "Nous avons besoin de la permission pour la photo";
@@ -637,6 +669,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		7D05A1B5275D4E1E009A3FF5 /* XCRemoteSwiftPackageReference "Player" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "http://github.com/piemonte/Player";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.9.2;
+			};
+		};
 		ECA3BC472747EC7300137872 /* XCRemoteSwiftPackageReference "image-picker-module" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/swiftui-packages/image-picker-module";
@@ -648,6 +688,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		7D05A1B6275D4E1E009A3FF5 /* Player */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7D05A1B5275D4E1E009A3FF5 /* XCRemoteSwiftPackageReference "Player" */;
+			productName = Player;
+		};
 		ECA3BC482747EC7300137872 /* ImagePickerModule */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = ECA3BC472747EC7300137872 /* XCRemoteSwiftPackageReference "image-picker-module" */;

@@ -9,24 +9,28 @@ import SwiftUI
 
 struct RegisterView: View {
     @State var username: String = ""
+    @State var password: String = ""
     var body: some View {
-        VStack{
-            Text("Register")
-            TextField("Username", text: $username).padding()//.background(Color.green)
-                .cornerRadius(5.0)
-                .padding(.bottom,20)
-            
-            Button(action: {
-                print("Buttontapped")
-            }){
-                Text("Register")
-            }
-            /*NavigationView {
-                NavigationLink(destination: Text("Second View")) {
-                        Text("Hello, World!")
+        NavigationView {
+            VStack{
+                Text("Inscription").font(.largeTitle).fontWeight(.semibold).padding(.bottom,20)
+                TextField("Username", text: $username).padding()//.background(Color.green)
+                    .cornerRadius(5.0)
+                    .padding(.bottom,20)
+                SecureField("Password", text: $password).padding()
+                    //.background(Color.green)
+                    .cornerRadius(5.0)
+                    .padding(.bottom,20)
+                NavigationLink(destination: HomeView()){
+                    Text("S'inscrire").font(.headline).foregroundColor(.white)
+                        .padding()
+                        .frame(width: 220, height: 60)
+                        .background(Color.green)
+                        .cornerRadius(15.0)
                     }
-                    .navigationTitle("Navigation")
-            }*/
+            
+               
+            }
             
         }
         
